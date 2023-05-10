@@ -1,0 +1,77 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    text-transform: capitalize;
+    background-color: #282a35;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 40px;
+    padding: 0px 15px;
+}
+
+.holder{
+    padding: 20px 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.go-button{    
+    padding: 3px 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: gray;
+}
+
+.grams,
+.ounces,
+.pounds{
+    width: 100%;
+    padding:10px 15px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    display: flex;
+    justify-content:flex-start;
+    align-content:center;
+
+}
+
+.text{
+    color: white;
+    margin: 0;
+}
+
+.pounds{
+    background-color: rgba(15, 121, 221, 0.912);
+}
+
+.ounces{
+    background-color: rgb(16, 172, 92);
+}
+
+.grams{
+    background-color: rgba(241, 78, 42, 0.863);
+}
