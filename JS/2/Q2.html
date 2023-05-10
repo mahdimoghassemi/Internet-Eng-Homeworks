@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,37 +13,37 @@
         body {
             background-color: wheat;
         }
-
+        
         .task-container {
             margin-top: 2.5em;
             margin-left: 25%;
         }
-
+        
         #inputTask {
             margin-top: 0.1em;
             border: black dashed 0.1em;
         }
-
+        
         .add-btn {
             margin-top: 0.1em;
         }
-
+        
         table {
             width: 50% !important;
             margin-top: 2em;
             margin-left: 25%;
         }
-
     </style>
 
 
 </head>
+
 <body>
 
     <div class="row task-container">
         <label for="inputTask">Add a new task</label>
         <div class="col-6">
-            <input id="inputTask" class="form-control" placeholder="New task">
+            <input class="form-control inputTask" placeholder="New task">
         </div>
         <div class="col-2">
             <button class="btn btn-info add-btn">Add Task</button>
@@ -51,23 +52,24 @@
 
     <table class="table table-light border border-primary">
         <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Task</th>
-            <th scope="col"></th>
-          </tr>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Task</th>
+                <th scope="col"></th>
+            </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td scope="col">1</td>
-            <td scope="col">حل تمرین مهندسی اینترنت</td>
-            <td scope="col">
-				<button class="btn btn-outline-primary">Done</button>
-			</td>
-          </tr>
+        <tbody class="add">
+            <!-- <tr>
+                <td scope="col">1</td>
+                <td scope="col">حل تمرین مهندسی اینترنت</td>
+                <td scope="col">
+                    <button class="btn btn-outline-primary">Done</button>
+                </td>
+            </tr> -->
         </tbody>
-      </table>
+    </table>
 
-      <script src="./app.js"></script>
+    <script src="./app.js"></script>
 </body>
+
 </html>
